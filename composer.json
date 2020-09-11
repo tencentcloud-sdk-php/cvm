@@ -1,14 +1,14 @@
 {
-    "name": "tencentcloud/template",
-    "description": "TencentCloudApi php sdk template",
+    "name": "tencentcloud/cvm",
+    "description": "TencentCloudApi php sdk cvm",
     "type": "library",
-    "homepage": "https://github.com/tencentcloud-sdk-php/template",
+    "homepage": "https://github.com/tencentcloud-sdk-php/cvm",
     "license": "Apache-2.0",
     "authors": [
         {
             "name": "tencentcloudapi",
             "email": "tencentcloudapi@tencent.com",
-            "homepage": "https://github.com/tencentcloud-sdk-php/template",
+            "homepage": "https://github.com/tencentcloud-sdk-php/cvm",
             "role": "Developer"
         }
     ],

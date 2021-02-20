@@ -24,6 +24,7 @@ use TencentCloud\Common\AbstractModel;
 全网可用区名称如下：
 <li> ap-chongqing-1 </li>
 <li> ap-seoul-1 </li>
+<li> ap-seoul-2 </li>
 <li> ap-chengdu-1 </li>
 <li> ap-chengdu-2 </li>
 <li> ap-hongkong-1 </li>
@@ -56,6 +57,8 @@ use TencentCloud\Common\AbstractModel;
 <li> ap-beijing-3 </li>
 <li> ap-beijing-4 </li>
 <li> ap-beijing-5 </li>
+<li> ap-beijing-6 </li>
+<li> ap-beijing-7 </li>
 <li> na-siliconvalley-1 </li>
 <li> na-siliconvalley-2 </li>
 <li> eu-frankfurt-1 </li>
@@ -68,6 +71,7 @@ use TencentCloud\Common\AbstractModel;
 全网可用区名称如下：
 <li> ap-chongqing-1 </li>
 <li> ap-seoul-1 </li>
+<li> ap-seoul-2 </li>
 <li> ap-chengdu-1 </li>
 <li> ap-chengdu-2 </li>
 <li> ap-hongkong-1 </li>
@@ -100,6 +104,8 @@ use TencentCloud\Common\AbstractModel;
 <li> ap-beijing-3 </li>
 <li> ap-beijing-4 </li>
 <li> ap-beijing-5 </li>
+<li> ap-beijing-6 </li>
+<li> ap-beijing-7 </li>
 <li> na-siliconvalley-1 </li>
 <li> na-siliconvalley-2 </li>
 <li> eu-frankfurt-1 </li>
@@ -122,6 +128,7 @@ class ZoneInfo extends AbstractModel
 全网可用区名称如下：
 <li> ap-chongqing-1 </li>
 <li> ap-seoul-1 </li>
+<li> ap-seoul-2 </li>
 <li> ap-chengdu-1 </li>
 <li> ap-chengdu-2 </li>
 <li> ap-hongkong-1 </li>
@@ -154,6 +161,8 @@ class ZoneInfo extends AbstractModel
 <li> ap-beijing-3 </li>
 <li> ap-beijing-4 </li>
 <li> ap-beijing-5 </li>
+<li> ap-beijing-6 </li>
+<li> ap-beijing-7 </li>
 <li> na-siliconvalley-1 </li>
 <li> na-siliconvalley-2 </li>
 <li> eu-frankfurt-1 </li>
@@ -185,6 +194,7 @@ class ZoneInfo extends AbstractModel
 全网可用区名称如下：
 <li> ap-chongqing-1 </li>
 <li> ap-seoul-1 </li>
+<li> ap-seoul-2 </li>
 <li> ap-chengdu-1 </li>
 <li> ap-chengdu-2 </li>
 <li> ap-hongkong-1 </li>
@@ -217,6 +227,8 @@ class ZoneInfo extends AbstractModel
 <li> ap-beijing-3 </li>
 <li> ap-beijing-4 </li>
 <li> ap-beijing-5 </li>
+<li> ap-beijing-6 </li>
+<li> ap-beijing-7 </li>
 <li> na-siliconvalley-1 </li>
 <li> na-siliconvalley-2 </li>
 <li> eu-frankfurt-1 </li>

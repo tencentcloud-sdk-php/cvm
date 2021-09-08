@@ -18,19 +18,26 @@ namespace TencentCloud\Cvm\V20170312\Models;
 use TencentCloud\Common\AbstractModel;
 
 /**
- * InquiryPriceTerminateInstances返回参数结构体
+ * DescribeInstancesModification返回参数结构体
  *
- * @method array getInstanceRefundsSet() 获取退款详情。
- * @method void setInstanceRefundsSet(array $InstanceRefundsSet) 设置退款详情。
+ * @method integer getTotalCount() 获取实例调整的机型配置的数量。
+ * @method void setTotalCount(integer $TotalCount) 设置实例调整的机型配置的数量。
+ * @method array getInstanceTypeConfigStatusSet() 获取实例支持调整的机型配置列表。
+ * @method void setInstanceTypeConfigStatusSet(array $InstanceTypeConfigStatusSet) 设置实例支持调整的机型配置列表。
  * @method string getRequestId() 获取唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
  * @method void setRequestId(string $RequestId) 设置唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
  */
-class InquiryPriceTerminateInstancesResponse extends AbstractModel
+class DescribeInstancesModificationResponse extends AbstractModel
 {
     /**
-     * @var array 退款详情。
+     * @var integer 实例调整的机型配置的数量。
      */
-    public $InstanceRefundsSet;
+    public $TotalCount;
+
+    /**
+     * @var array 实例支持调整的机型配置列表。
+     */
+    public $InstanceTypeConfigStatusSet;
 
     /**
      * @var string 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -38,7 +45,8 @@ class InquiryPriceTerminateInstancesResponse extends AbstractModel
     public $RequestId;
 
     /**
-     * @param array $InstanceRefundsSet 退款详情。
+     * @param integer $TotalCount 实例调整的机型配置的数量。
+     * @param array $InstanceTypeConfigStatusSet 实例支持调整的机型配置列表。
      * @param string $RequestId 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
      */
     function __construct()
@@ -54,12 +62,16 @@ class InquiryPriceTerminateInstancesResponse extends AbstractModel
         if ($param === null) {
             return;
         }
-        if (array_key_exists("InstanceRefundsSet",$param) and $param["InstanceRefundsSet"] !== null) {
-            $this->InstanceRefundsSet = [];
-            foreach ($param["InstanceRefundsSet"] as $key => $value){
-                $obj = new InstanceRefund();
+        if (array_key_exists("TotalCount",$param) and $param["TotalCount"] !== null) {
+            $this->TotalCount = $param["TotalCount"];
+        }
+
+        if (array_key_exists("InstanceTypeConfigStatusSet",$param) and $param["InstanceTypeConfigStatusSet"] !== null) {
+            $this->InstanceTypeConfigStatusSet = [];
+            foreach ($param["InstanceTypeConfigStatusSet"] as $key => $value){
+                $obj = new InstanceTypeConfigStatus();
                 $obj->deserialize($value);
-                array_push($this->InstanceRefundsSet, $obj);
+                array_push($this->InstanceTypeConfigStatusSet, $obj);
             }
         }
 

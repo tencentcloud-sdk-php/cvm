@@ -92,6 +92,7 @@ https://img.qcloud.com/qcloud/app/active_vnc/index.html?InstanceVncUrl=wss%3A%2F
 * 可以根据实例`ID`、实例名称或者实例计费模式等信息来查询实例的详细信息。过滤信息详细请见过滤器`Filter`。
 * 如果参数为空，返回当前用户一定数量（`Limit`所指定的数量，默认为20）的实例。
 * 支持查询实例的最新操作（LatestOperation）以及最新操作状态(LatestOperationState)。
+ * @method Models\DescribeInstancesModificationResponse DescribeInstancesModification(Models\DescribeInstancesModificationRequest $req) 本接口 (DescribeInstancesModification) 用于查询指定实例支持调整的机型配置。
  * @method Models\DescribeInstancesOperationLimitResponse DescribeInstancesOperationLimit(Models\DescribeInstancesOperationLimitRequest $req) 本接口（DescribeInstancesOperationLimit）用于查询实例操作限制。
 
 * 目前支持调整配置操作限制次数查询。
@@ -172,7 +173,7 @@ https://img.qcloud.com/qcloud/app/active_vnc/index.html?InstanceVncUrl=wss%3A%2F
 
  * @method Models\ModifyInstancesAttributeResponse ModifyInstancesAttribute(Models\ModifyInstancesAttributeRequest $req) 本接口 (ModifyInstancesAttribute) 用于修改实例的属性（目前只支持修改实例的名称和关联的安全组）。
 
-* “实例名称”仅为方便用户自己管理之用，腾讯云并不以此名称作为提交工单或是进行实例管理操作的依据。
+* “实例名称”仅为方便用户自己管理之用，腾讯云并不以此名称作为在线支持或是进行实例管理操作的依据。
 * 支持批量操作。每次请求批量实例的上限为100。
 * 修改关联安全组时，子机原来关联的安全组会被解绑。
 * 实例操作结果可以通过调用 [DescribeInstances](https://cloud.tencent.com/document/api/213/15728#.E7.A4.BA.E4.BE.8B3-.E6.9F.A5.E8.AF.A2.E5.AE.9E.E4.BE.8B.E7.9A.84.E6.9C.80.E6.96.B0.E6.93.8D.E4.BD.9C.E6.83.85.E5.86.B5) 接口查询，如果实例的最新操作状态(LatestOperationState)为“SUCCESS”，则代表操作成功。

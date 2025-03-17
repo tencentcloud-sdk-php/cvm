@@ -18,26 +18,19 @@ namespace TencentCloud\Cvm\V20170312\Models;
 use TencentCloud\Common\AbstractModel;
 
 /**
- * DescribeTaskInfo返回参数结构体
+ * DescribeInstancesAttributes返回参数结构体
  *
- * @method integer getTotalCount() 获取查询返回的维修任务总数量。
- * @method void setTotalCount(integer $TotalCount) 设置查询返回的维修任务总数量。
- * @method array getRepairTaskInfoSet() 获取查询返回的维修任务列表。
- * @method void setRepairTaskInfoSet(array $RepairTaskInfoSet) 设置查询返回的维修任务列表。
+ * @method array getInstanceSet() 获取指定的实例属性列表
+ * @method void setInstanceSet(array $InstanceSet) 设置指定的实例属性列表
  * @method string getRequestId() 获取唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
  * @method void setRequestId(string $RequestId) 设置唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
  */
-class DescribeTaskInfoResponse extends AbstractModel
+class DescribeInstancesAttributesResponse extends AbstractModel
 {
     /**
-     * @var integer 查询返回的维修任务总数量。
+     * @var array 指定的实例属性列表
      */
-    public $TotalCount;
-
-    /**
-     * @var array 查询返回的维修任务列表。
-     */
-    public $RepairTaskInfoSet;
+    public $InstanceSet;
 
     /**
      * @var string 唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
@@ -45,8 +38,7 @@ class DescribeTaskInfoResponse extends AbstractModel
     public $RequestId;
 
     /**
-     * @param integer $TotalCount 查询返回的维修任务总数量。
-     * @param array $RepairTaskInfoSet 查询返回的维修任务列表。
+     * @param array $InstanceSet 指定的实例属性列表
      * @param string $RequestId 唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
      */
     function __construct()
@@ -62,16 +54,12 @@ class DescribeTaskInfoResponse extends AbstractModel
         if ($param === null) {
             return;
         }
-        if (array_key_exists("TotalCount",$param) and $param["TotalCount"] !== null) {
-            $this->TotalCount = $param["TotalCount"];
-        }
-
-        if (array_key_exists("RepairTaskInfoSet",$param) and $param["RepairTaskInfoSet"] !== null) {
-            $this->RepairTaskInfoSet = [];
-            foreach ($param["RepairTaskInfoSet"] as $key => $value){
-                $obj = new RepairTaskInfo();
+        if (array_key_exists("InstanceSet",$param) and $param["InstanceSet"] !== null) {
+            $this->InstanceSet = [];
+            foreach ($param["InstanceSet"] as $key => $value){
+                $obj = new InstanceAttribute();
                 $obj->deserialize($value);
-                array_push($this->RepairTaskInfoSet, $obj);
+                array_push($this->InstanceSet, $obj);
             }
         }
 
